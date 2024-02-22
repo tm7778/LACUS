@@ -1,0 +1,357 @@
+/* cutive mono */
+/* ----------------------------FUENTE CONTENIDO-------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+/* font-family: 'Cutive Mono', monospace; */
+
+/* ------------------FUENTE LOGO---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/* font-family: 'Bebas Neue', sans-serif; */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#video_background {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    overflow: hidden;
+    opacity: 50%;
+}
+
+body {
+    overflow: hidden;
+    background: #000000;
+    color: #000000;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+   justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    padding: 10px 2%;
+    z-index: 1;
+}
+
+.header .logo {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 600;
+    display: flex;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 7px;
+}
+.header .len {
+    color: #eaeaea;
+    font-size: 25px;
+    display: flex;
+    font-family: 'Cutive Mono', monospace;
+    align-items: center;
+    border: none;
+    background: none;
+    outline: none;
+}
+.header .menu {
+    color: #eaeaea;
+    font-size: 25px;
+    display: flex;
+    font-family: 'Cutive Mono', monospace;
+    align-items: center;
+    border: none;
+    background: none;
+    outline: none;  
+}
+.header .right{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    z-index: 1;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+   
+}
+
+.header .colecciones{
+    color: #eaeaea; 
+    font-size: 25px;
+    display: flex;
+    font-family: 'Cutive Mono', monospace;
+    align-items: center;
+    padding-left: 10px;
+
+}
+
+.header .left{
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 2%;
+    z-index: 1;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+
+}
+
+.header .center{
+    padding-left: 19.5%;
+} 
+
+.button{
+    color: #eaeaea;
+    font-size: 25px;
+    display: flex;
+    font-family: 'Cutive Mono', monospace;
+    align-items: center;
+    border: none;
+    background: none;
+    outline: none;
+    font-style: normal;
+}
+
+
+
+  
+.nextbutton{
+  
+  bottom: 50px;
+  left: 46%;
+  color: #eaeaea; 
+  font-size: 40px;
+  font-family: 'Bebas Neue', sans-serif;
+  
+}
+main .alinear {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+main .alinear .colections video{
+    width: 500px;
+    height: 500px;
+}
+
+/* -----------------------HOVER--------------------------- */
+.len:hover {
+    color: #707070;
+    transition: 1s;
+}
+.menu:hover {
+    color: #707070;
+    transition: 1s;
+}
+.logo:hover {
+    color: #707070;
+    transition: 1s;
+}
+.colecciones:hover {
+    color: #707070;
+    transition: 1s;
+}
+.button:hover{
+    color: #707070;
+    transition: 1s;
+
+}
+.concept:hover{
+    color: #707070;
+    transition: 1s;
+  }
+/* ------------------------------------------------- */
+
+/* ---------------------------------------------MENU----------------------------- */
+.menu {
+    opacity: 1;
+}
+.dropdown-item {
+    position: relative;
+}
+.dropdown-item>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.dropdown-item .menu {
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 500px;
+    height: 0px;
+    font-family: 'Raleway', sans-serif;
+    transition: 1s all;
+}
+.dropdown-item:hover .menu {
+    height: 500px;
+}
+.dropdown-item .menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 35px;
+
+}
+.dropdown-item .menu li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    font-size: 50px;
+    transition: 1s;
+
+
+}
+.dropdown-item .menu li a:hover {
+    color: rgb(22, 22, 22);
+    opacity: 1;
+
+
+}
+.redes {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    
+}
+.tamaño {
+    width: 30px;
+    height: 30px;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------IDIOMAS----------------------------------- */
+
+.menuIdiomas:hover{
+    color: #707070;
+    transition: 1s;
+}
+.Len{
+    opacity: 1;
+}
+.menuIdiomas{
+    position: relative;
+    font-family: 'Cutive Mono', monospace;
+    font-size: 23px;
+    color: rgb(192, 192, 192);
+    display: block;
+    text-decoration: none;
+    font-size: 22px;
+    transition: 1s;
+    
+}
+.menuIdiomas>a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+
+}
+.menuIdiomas .Len {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 200px;
+    height: 0px;
+    font-family: 'Bebas Neue', sans-serif;
+    transition: 1s all;
+}
+.menuIdiomas:hover .Len{
+    height: 200px;
+}
+.menuIdiomas .Len ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 35px;
+
+}
+.menuIdiomas .Len li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 1s;
+
+
+}
+.menuIdiomas .Len li a:hover {
+    color: rgb(109, 109, 109);
+    opacity: 1;
+}
+/* --------------------------------------------------------------------------------------- */
+/* ---------------------------------------ANIMACION---------------------------------- */
+
+.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 3%;
+    z-index: 1;
+    padding-left: 0px;
+}
+
+.link::before,
+.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    transform: scaleX(0);
+    transition: transform 0.7s;
+}
+
+.link::before {
+    top: -1px;
+    transform-origin: left;
+}
+
+.link::after {
+    bottom: -1px;
+    transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+    transform: scaleX(1);
+}
+/* ---------------------------------------------------------------------- */

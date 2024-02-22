@@ -1,0 +1,612 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* fragment mono */
+
+@import url("https://fonts.googleapis.com/css2?family=Fragment+Mono&display=swap");
+/* font-family: 'Fragment Mono', monospace; */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap'); */
+/* font-family: 'Kanit', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap");
+
+/* cutive mono */
+/* ----------------------------FUENTE CONTENIDO-------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap");
+/* font-family: 'Cutive Mono', monospace; */
+
+/* ------------------FUENTE LOGO---------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+/* font-family: 'Bebas Neue', sans-serif; */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a{
+  text-decoration: none;
+}
+
+html{
+  background: rgb(0, 0, 0);
+  color: white;
+  overflow: hidden;
+  text-decoration: none;
+  
+}
+
+.scroll-container,.scroll-area{
+  height: 100vh;
+  width: 100vw;
+}
+.scroll-container{
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+.scroll-area{
+  scroll-snap-align: center;
+  max-width: 100%;
+  position: relative;
+}
+.scroll-container,.scroll-area{
+margin: 0 auto ;
+}
+.scroll-area{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  max-height: 100%;
+  overflow: hidden  ;
+  scroll-behavior: smooth;
+}
+
+.video_background {
+
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  opacity: 40%;
+  object-fit: fill;
+  position: absolute;
+}
+.scroll-container .scroll-area .alinear {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-left: 10vh;
+  padding-right: 30vh;
+  height: 80vh;
+}
+
+.scroll-container .scroll-area .alinear .link .concept {
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 5px;
+  font-size: 40px;
+}
+
+.scroll-container .scroll-area .alinear .parrafo {
+  font-family: "Cutive Mono", monospace;
+  text-align: left;
+  font-size: 30px;
+  max-width: 100%;
+
+}
+/* --------------------------HEADER-------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  position: absolute ;
+  padding: 10px 2%;
+  z-index: 1;
+  background-color:transparent;
+  width: 100%;
+  
+}
+
+.header .logo {
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: 300;
+  display: flex;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 7px;
+}
+.header .len {
+  color: #eaeaea;
+  font-size: 15px;
+  display: flex;
+  font-family: "Cutive Mono", monospace;
+  align-items: center;
+  border: none;
+  background: none;
+  outline: none;
+}
+.header .menu {
+  color: #eaeaea;
+  font-size: 15px;
+  display: flex;
+  font-family: "Cutive Mono", monospace;
+  align-items: center;
+  border: none;
+  background: none;
+  outline: none;
+}
+.header .right {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2%;
+  z-index: 1;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.header .colecciones {
+  color: #eaeaea;
+  font-size: 25px;
+  display: flex;
+  font-family: "Cutive Mono", monospace;
+  align-items: center;
+  padding-left: 10px;
+  
+}
+
+.header .left {
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 2%;
+  z-index: 1;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.header .center {
+  padding-left: 19.5%;
+}
+/* -----------------------HOVER--------------------------- */
+.len:hover {
+  color: #707070;
+  transition: 1s;
+}
+.menu:hover {
+  color: #707070;
+  transition: 1s;
+}
+.logo:hover {
+  color: #707070;
+  transition: 1s;
+}
+.colecciones:hover {
+  color: #707070;
+  transition: 1s;
+}
+.button:hover {
+  color: #707070;
+  transition: 1s;
+}
+.concept:hover {
+  color: #707070;
+  transition: 1s;
+}
+/* ------------------------------------------------- */
+
+/* ---------------------------------------------MENU----------------------------- */
+.menu {
+  opacity: 1;
+}
+.dropdown-item {
+  position: relative;
+}
+.dropdown-item > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.dropdown-item .menu {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 30vh;
+  height: 0px;
+  font-family: "Raleway", sans-serif;
+  transition: 1s all;
+}
+.dropdown-item:hover .menu {
+  height: 30vh;
+}
+.dropdown-item .menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding-top: 10%; */
+}
+.dropdown-item .menu li a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 1s;
+}
+.dropdown-item .menu li a:hover {
+  color: rgb(22, 22, 22);
+  opacity: 1;
+}
+.redes {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+}
+.tamaño {
+  width: 30px;
+  height: 30px;
+}
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------IDIOMAS----------------------------------- */
+
+.menuIdiomas:hover {
+  color: #707070;
+  transition: 1s;
+}
+.Len {
+  opacity: 1;
+}
+.menuIdiomas {
+  position: relative;
+  font-family: "Cutive Mono", monospace;
+  font-size: 23px;
+  color: rgb(192, 192, 192);
+  display: block;
+  text-decoration: none;
+  transition: 1s;
+}
+.menuIdiomas > a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.menuIdiomas .Len {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  width: 15vh;
+  height: 0px;
+  font-family: "Bebas Neue", sans-serif;
+  transition: 1s all;
+}
+.menuIdiomas:hover .Len {
+  height: 15vh;
+}
+.menuIdiomas .Len ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-top: 5%;
+}
+.menuIdiomas .Len li a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  font-size: 23px;
+  transition: 1s;
+}
+.menuIdiomas .Len li a:hover {
+  color: rgb(109, 109, 109);
+  opacity: 1;
+}
+/* ---------------------------------------ANIMACION---------------------------------- */
+
+.link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 3%;
+  z-index: 1;
+  padding-left: 0px;
+}
+
+.link::before,
+.link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  transform: scaleX(0);
+  transition: transform 0.7s;
+}
+
+.link::before {
+  top: -1px;
+  transform-origin: left;
+}
+
+.link::after {
+  bottom: -1px;
+  transform-origin: right;
+}
+
+.link:hover::before,
+.link:hover::after,
+.active::before,
+.active::after {
+  transform: scaleX(1);
+}
+/* ---------------------------------------------------------------------- */
+/* -----------------------------------CLOECTION---------------------------------- */
+main .colections {
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+}
+
+main .colections .ancla {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 1;
+  transition: 1s ease;
+}
+main .colections .ancla img {
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: 1s ease;
+  border-radius: 10px;
+}
+main .colections .ancla:hover {
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+.colections_Main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ================ FOOTER ================= */
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 10px;
+  background: rgba(0,0,0,.7);
+}
+
+footer article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 50px 40px;
+  margin: -99px 20px 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #949494, #676767);
+}
+
+footer article h2 {
+  font-weight: 400;
+  color: rgb(255 255 255 / 70%);
+}
+
+footer article button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 40px 0 44px;
+  width: 100%;
+  background: #464646;
+  border: 0;
+  border-radius: 30px;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+footer section {
+  padding: 0 50px;
+}
+
+section.top {
+  padding-top: 30px;
+  margin-bottom: 48px;
+}
+
+section.top img {
+  display: block;
+  height: 30px;
+  margin: 0 0 30px;
+}
+
+section.top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+section.top ul li a {
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(255 255 255 / 90%);
+}
+
+section.top h3 {
+  color: rgb(255 255 255 / 40%);
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+section.bottom {
+  padding-top: 2px;
+  border-top: 2px solid rgb(255 255 255 / 10%);
+  color: rgba(255, 254, 254, 0.4);
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.iconsFooter {
+  display: flex;
+  justify-content: end;
+  padding-right: 0px;
+}
+
+.rowFooter{
+  font-size: large;
+  text-decoration: none;
+  font-family: 'Kanit', sans-serif;
+  display: flex;
+  justify-content: space-around;
+  color: #eaeaea;
+}
+
+.rowFooter a{
+  color: #eaeaea;
+}
+
+.About:hover a{
+  color: #707070;
+  transition: 1s;
+}
+
+.blog:hover a{
+  color: #707070;
+  transition: 1s;
+}
+
+.support:hover a{
+  color: #707070;
+  transition: 1s;
+}
+
+.WorkWithUs:hover a{
+  color: #707070;
+  transition: 1s;
+}
+/* --------------------------------------------------------------- */
+
+/* ===========================================================================================
+---------------------------------------CELULAR TABLET---------------------------------------
+=========================================================================================== */
+@media (width < 768px) {
+  body .header .center .link .logo {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+  .menuIdiomas .Len li a{
+    font-size: 20px;
+  }
+
+
+  .redes .tamaño {
+    width: 20px;
+    height: 20px;
+  }
+
+  .alinear .concept {
+    font-size: 50px;
+  }
+
+  .alinear .parrafo {
+    font-size: 18px;
+    max-width: 80%;
+  }
+  .con {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+  }
+  .header .center {
+    padding-left: 0;
+  }
+  #colecciones {
+    display: none;
+  }
+  .header .center {
+    padding-left: 10%;
+  }
+  .scroll-container .scroll-area .alinear {
+    padding-left: 5vh;
+    padding-right: 3vh;
+    height: 80vh;             
+    width: 80vh;
+  }
+  main .alinear .link .concept {
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 2px;
+    font-size: 2rem;
+  }
+  .scroll-container .scroll-area .alinear .parrafo{
+    width: 100%;
+    font-size: 20px;
+    max-width: 100%;
+  }
+  .scroll-container .scroll-area .colections_Main .colections{
+
+    display: block;
+    width: 90%;
+    height: 50%;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+    border-radius: 15px;
+    scroll-behavior: smooth; 
+
+  }
+  .scroll-container .scroll-area .colections_Main .colections .ancla {
+    width: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+    filter: none ;
+    border-radius: 15px;
+    
+  } 
+
+}
+
+
+
